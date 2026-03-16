@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Star Pizzeria</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #0b0b0b;
+  color: white;
+}
+
+nav {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 8%;
+  background: #111;
+}
+
+nav h1 {
+  color: #ff4d4d;
+}
+
+nav a {
+  color:white;
+  text-decoration:none;
+  margin-left:20px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ff4d4d;
+}
+
+.hero {
+  height: 60vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding: 40px 10%;
+}
+
+.hero h2 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.button {
+  padding: 14px 30px;
+  background: #ff4d4d;
+  border-radius: 30px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.section {
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.card {
+  background: #151515;
+  padding: 25px;
+  width: 260px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: #222;
+}
+
+.directions {
+  margin-top: 40px;
+}
+
+.directions a {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 25px;
+  background: #ff4d4d;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.directions a:hover {
+  background: #ff2e2e;
+}
+
+footer {
+  margin-top: 50px;
+  padding: 20px;
+  background: #111;
+  text-align: center;
+  color: #aaa;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<h1>Star Pizzeria</h1>
+<div>
+<a href="index.html">Home</a>
+<a href="menu.html">Menu</a>
+</div>
+</nav>
+
+<section class="hero">
+<h2>Fresh Pizza Made Daily</h2>
+<p>Pizza, kebabs, and Mediterranean food</p>
+<a class="button" href="menu.html">View Menu</a>
+</section>
+
+<section class="section">
+<h2>Why Customers Choose Us</h2>
+<div class="cards">
+<div class="card">
+<h3>Fresh Ingredients</h3>
+<p>Pizza made with fresh dough and premium toppings.</p>
+</div>
+<div class="card">
+<h3>Authentic Flavor</h3>
+<p>Turkish and Mediterranean style dishes.</p>
+</div>
+<div class="card">
+<h3>Fast Service</h3>
+<p>Dine in, takeout, or delivery available.</p>
+</div>
+</div>
+</section>
+
+<section class="section directions">
+<h2>Get Directions</h2>
+<p>We are located at 10001 W Bellfort Ave, Houston, TX 77031</p>
+<!-- Link that opens the user’s preferred map app -->
+<a href="https://maps.apple.com/?address=10001%20W%20Bellfort%20Ave,%20Houston,%20TX%2077031" target="_blank">
+Open in Maps
+</a>
+</section>
+
+<footer>
+<p>Star Pizzeria | Houston, Texas</p>
+</footer>
+
+</body>
+</html>
